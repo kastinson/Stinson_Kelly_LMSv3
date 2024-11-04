@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lms.AddBookController">
+    <top>
+        <Label text="Add New Book" style="-fx-font-size: 24px;" alignment="CENTER"/>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <Pane fx:id="formContainer" />
+            <Button text="Add Book" onAction="#handleAddBook"/>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lms.LMSController">
+    <top>
+        <VBox alignment="CENTER">
+            <Label text="Library Management System" style="-fx-font-size: 24px;">
+                <VBox.margin>
+                    <Insets top="50"/>
+                </VBox.margin>
+            </Label>
+        </VBox>
+    </top>
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <Button text="Check In Book" onAction="#checkInBook" prefWidth="200"/>
+            <Button text="Check Out Book" onAction="#checkOutBook" prefWidth="200"/>
+            <Button text="View All Books" onAction="#viewBooks" prefWidth="200"/>
+            <Button text="Add Book" onAction="#addBook" prefWidth="200"/>
+            <Button text="Remove Book" onAction="#removeBook" prefWidth="200"/>
+            <Button text="Load Books" onAction="#loadBooksFromFile" prefWidth="200"/>
+            <Region prefHeight="20"/>
+            <Button text="Exit" onAction="#exitApplication" prefWidth="200"/>
+        </VBox>
+    </center>
+</BorderPane>
