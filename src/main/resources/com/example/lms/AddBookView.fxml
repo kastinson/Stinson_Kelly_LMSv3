@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lms.AddBookController">
+    <top>
+        <Label text="Add New Book" style="-fx-font-size: 24px; -fx-padding: 10;" alignment="CENTER"/>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="15" style="-fx-padding: 20;">
+            <GridPane fx:id="formContainer" alignment="CENTER" hgap="10" vgap="10">
+                <Label text="Barcode:" minWidth="150"/>
+                <TextField fx:id="barcodeField" GridPane.columnIndex="1"/>
+
+                <Label text="Title:" minWidth="150" GridPane.rowIndex="1"/>
+                <TextField fx:id="titleField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                <Label text="Author:" minWidth="150" GridPane.rowIndex="2"/>
+                <TextField fx:id="authorField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+                <Label text="Genre:" minWidth="150" GridPane.rowIndex="3"/>
+                <TextField fx:id="genreField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+                <Label text="Status:" minWidth="150" GridPane.rowIndex="4"/>
+                <ComboBox fx:id="statusComboBox" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+                <Label text="Due Date:" minWidth="150" GridPane.rowIndex="5"/>
+                <DatePicker fx:id="dueDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+            </GridPane>
+
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="Add Book" onAction="#handleAddBook" style="-fx-padding: 10 20;"/>
+                <Button text="Close" onAction="#handleClose" style="-fx-padding: 10 20;"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>
+

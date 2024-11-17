@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lms.ViewBooksController" spacing="10" alignment="CENTER">
+    <TableView fx:id="booksTable" prefWidth="600" prefHeight="400">
+        <columns>
+            <TableColumn text="Title" fx:id="titleColumn"/>
+            <TableColumn text="Author" fx:id="authorColumn"/>
+            <TableColumn text="Barcode" fx:id="barcodeColumn"/>
+            <TableColumn text="Genre" fx:id="genreColumn"/>
+            <TableColumn text="Status" fx:id="statusColumn"/>
+            <TableColumn text="Due Date" fx:id="dueDateColumn"/>
+        </columns>
+    </TableView>
+</VBox>
