@@ -20,6 +20,8 @@ The LMS is built using the **Model-View-Controller (MVC)** architectural pattern
 
 ## Prerequisites
 - **Java 7 or later**: Make sure you have Java Development Kit (JDK) installed on your machine.
+- **JUnit**: for testing
+- **MySQL**: for the database backend
 - **Text Editor or IDE**: You can use any text editor (e.g., Notepad++, VS Code) or an IDE (e.g., IntelliJ IDEA, Eclipse) to work with the source code.
 
 ## Setup Instructions
