@@ -65,6 +65,9 @@ CREATE TABLE books (
     DueDate DATE                                -- Due date for returning the book
 ) ENGINE=InnoDB;
 
+ALTER TABLE books
+ADD CONSTRAINT unique_barcode UNIQUE (Barcode);
+
 INSERT INTO books (Barcode, Title, Author, Genre, Status, DueDate) VALUES
 ('9781250145121', 'The Grey Wolf', 'Louise Penny', 'Mystery', 'Checked In', NULL),
 ('9780316498933', 'Throne of Secrets', 'Kerri Maniscalco', 'Fantasy', 'Checked Out', '2024-11-17'),
